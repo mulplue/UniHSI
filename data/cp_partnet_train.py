@@ -73,10 +73,10 @@ for obj_info in obj_list:
     target_file = "partnet/"+partnet_id+"/point_sample/sample-points-all-pts-label-10000.ply"
     copy_file(source_file, target_file)
 
-    source_file =  "shapent_origin/"+shapenet_id_1+"/"+shapenet_id_2+"/models/model_normalized.mtl"
+    source_file =  "shapenet_origin/"+shapenet_id_1+"/"+shapenet_id_2+"/models/model_normalized.mtl"
     target_file = "partnet/"+partnet_id+"/models/model_normalized.mtl"
     copy_file(source_file, target_file)
 
-    source_file =  "shapent_origin/"+shapenet_id_1+"/"+shapenet_id_2+"/models/model_normalized.obj"
+    source_file =  "shapenet_origin/"+shapenet_id_1+"/"+shapenet_id_2+"/models/model_normalized.obj"
     target_file = "partnet/"+partnet_id+"/models/model_normalized.obj"
     copy_file(source_file, target_file)

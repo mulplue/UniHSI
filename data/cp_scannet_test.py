@@ -1,8 +1,9 @@
 import shutil
 import os
 
-obj_list = ["0000_00", "0004_00", "0006_00", "0008_00", "0009_00", "0010_00", "0013_00",
-             "0015_00", "0025_00", "0030_00"]
+obj_list = ["scene0000_00", "scene0004_00", "scene0006_00", "scene0008_00",
+            "scene0009_00", "scene0010_00", "scene0013_00", "scene0015_00", 
+            "scene0025_00", "scene0030_00"]
             
             
 
@@ -15,9 +16,14 @@ def copy_file(source_path, destination_path):
 for obj_id in obj_list:
     source_file =  "scannet_origin/scans/"+obj_id+"/"+obj_id+"_vh_clean_2.ply"
     target_file = "scannet/"+obj_id+"_vh_clean_2.ply"
+    copy_file(source_file, target_file)
+
     source_file =  "scannet_origin/scans/"+obj_id+"/"+obj_id+"_vh_clean.aggregation.json"
     target_file = "scannet/"+obj_id+"_vh_clean.aggregation.json"
-    source_file =  "scannet_origin/scans/"+obj_id+"/"+obj_id+"_vh_clean_2.0.010000.segs"
-    target_file = "scannet/"+obj_id+"_vh_clean_2.0.010000.segs"
+    copy_file(source_file, target_file)
 
+    # source_file =  "scannet_origin/scans/"+obj_id+"/"+obj_id+"_vh_clean_2.0.010000.segs"
+    # target_file = "scannet/"+obj_id+"_vh_clean_2.0.010000.segs"
+    source_file =  "scannet_origin/scans/"+obj_id+"/"+obj_id+"_vh_clean_2.0.010000.segs.json"
+    target_file = "scannet/"+obj_id+"_vh_clean_2.0.010000.segs.json"
     copy_file(source_file, target_file)
