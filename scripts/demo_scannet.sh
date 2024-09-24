@@ -6,6 +6,4 @@ python3 unihsi/run.py \
     --cfg_train unihsi/data/cfg/train/rlg/amp_humanoid_task_deep_layer.yaml \
     --motion_file motion_clips/chair_mo014.npy \
     --checkpoint checkpoints/Humanoid.pth \
-    --obj_file sceneplan_demo/scannet_example.json \
-    --wandb_name disabled \
-    
+    --obj_file sceneplan_demo/scannet_example.json
