@@ -207,7 +207,7 @@ def main():
     cfg_train['params']['config']['train_dir'] = args.output_path
     
     # wandb.init(project="ase", entity="xizaoqu",name=args.wandb_name)
-    wandb.init(project="ase",name=args.wandb_name)
+    wandb.init(project="ase",name=args.wandb_name,mode=args.wandb_mode)
     wandb.config.cfg_env = args.cfg_env
     wandb.config.cfg_train = args.cfg_train
     wandb.config.checkpoint = args.checkpoint

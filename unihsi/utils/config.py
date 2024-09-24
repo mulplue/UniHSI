@@ -229,6 +229,7 @@ def get_args(benchmark=False):
             "help": "Apply additional PyTorch settings for more deterministic behaviour"},
         {"name": "--output_path", "type": str, "default": "output/", "help": "Specify output directory"},
         {"name": "--wandb_name", "type": str, "default": "test", "help": "Specify wandb directory"},
+        {"name": "--wandb_mode", "type": str, "default": "online", "help": "Make wandb enabled or disabled"},
         {"name": "--llc_checkpoint", "type": str, "default": "",
             "help": "Path to the saved weights for the low-level controller of an HRL agent."},
         {"name": "--obj_file", "type": str, "default": ""}]

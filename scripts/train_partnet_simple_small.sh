@@ -1,4 +1,4 @@
-python3 unihsi/run.py \
+python3 unihsi/run.py --wandb_name simple_16 \
     --task UniHSI_PartNet_Train\
     --cfg_env unihsi/data/cfg/humanoid_unified_interaction_scene_4.yaml \
     --cfg_train unihsi/data/cfg/train/rlg/amp_humanoid_task_deep_layer_2we.yaml \
